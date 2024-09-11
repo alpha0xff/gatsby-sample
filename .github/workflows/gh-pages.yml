@@ -1,11 +1,12 @@
 name: GitHub Pages
 
 on:
+  pull_request:
+    branches:
+      - main
+    types:
+      - closed
   workflow_dispatch:
-  # push:
-  #   branches:
-  #     - main
-  # pull_request:
 
 jobs:
   build:
